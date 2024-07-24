@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "vintage-brands";
+	src: url(../fonts/vintage-brands.ttf);
+}
+@font-face {
+	font-family: "coolvetica";
+	src: url(../fonts/coolvetica.otf);
+}
+
+:root {
+    --font-default: Arial, Verdana, Helvetica, sans-serif;
+    --font-vintage: "vintage-brands", sans-serif;
+	--font-coolvetica: "coolvetica", sans-serif;
+}
+
+body{
+	font-family: var(--font-coolvetica);
+}
+
+h1, h2, h3{
+	font-family: var(--font-vintage);
+}
+
+html{
+	height: 100vw;
+	height: 100vh;
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}

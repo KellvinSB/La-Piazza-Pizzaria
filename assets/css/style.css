@@ -9,7 +9,9 @@
 
 :root {
 	--color-light: #ffffff;
+	--color-light-hover: #ffe591;
 	--color-dark: #1f1e1f;
+	--color-dark-bg: #333;
     --font-default: Arial, Verdana, Helvetica, sans-serif;
     --font-vintage: "vintage-brands", sans-serif;
 	--font-coolvetica: "coolvetica", sans-serif;
@@ -56,4 +58,29 @@ html{
 .header__logo h3{
 	color: var(--color-light);
 	font-size: 1.6rem;
+	margin-left: 10px;
+}
+
+/* -------------------- Nav -------------------- */
+.header__nav-list{
+	width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__nav-list li a{
+	color: var(--color-light);
+	padding: 3rem 1rem 2rem 1rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	transition: all 300ms ease-in;
+}
+
+.header__nav-list li a:hover{
+	background-color: var(--color-dark-bg);
+	border-bottom: 4px solid var(--color-light-hover);
+	color: var(--color-light-hover);
 }

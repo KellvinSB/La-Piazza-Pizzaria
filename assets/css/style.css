@@ -8,8 +8,7 @@
 }
 
 :root {
-	--color-light: #ffffff;
-	--color-light-hover: #ffe591;
+	--color-light: #ffe591;
 	--color-dark: #1f1e1f;
 	--color-dark-bg: #333;
     --font-default: Arial, Verdana, Helvetica, sans-serif;
@@ -56,7 +55,7 @@ html{
 }
 
 .header__logo h3{
-	color: var(--color-light);
+	color: white;
 	font-size: 1.6rem;
 	margin-left: 10px;
 }
@@ -70,7 +69,7 @@ html{
 }
 
 .header__nav-list li a{
-	color: var(--color-light);
+	color: white;
 	padding: 3rem 1rem 2rem 1rem;
 	font-size: 1.8rem;
 	text-transform: uppercase;
@@ -81,6 +80,63 @@ html{
 
 .header__nav-list li a:hover{
 	background-color: var(--color-dark-bg);
-	border-bottom: 4px solid var(--color-light-hover);
-	color: var(--color-light-hover);
+	border-bottom: 4px solid var(--color-light);
+	color: var(--color-light);
+}
+
+/* -------------------- First section -------------------- */
+.first-section {
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)), url(../img/pizza-bg.png);
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.first-section__main-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.first-section h1{
+	color: var(--color-light);
+	font-size: 4rem;
+	margin-bottom: 3rem;
+}
+
+.first-section h2{
+	color: gray;
+	font-size: 4rem;
+	margin-bottom: 15rem;
+}
+
+.first-section__btn{
+	width: 480px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.first-section__btn button{
+	width: 230px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 1.8rem;
+	background-color: var(--color-light);
+	color: black;
+
+	transition: all 300ms ease-in;
+}
+
+.first-section__btn button:hover{
+	background-color: transparent;
+	border: 1px solid var(--color-light);
+	color: var(--color-light);
 }

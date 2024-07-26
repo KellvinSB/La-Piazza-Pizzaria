@@ -97,7 +97,7 @@ html{
 	align-items: center;
 }
 
-.first-section__main-content{
+.first-section__main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -139,4 +139,47 @@ html{
 	background-color: transparent;
 	border: 1px solid var(--color-light);
 	color: var(--color-light);
+}
+
+/* -------------------- about-us -------------------- */
+.about-us{
+	background-color: var(--color-dark);
+	color: white;
+	width: 100%;
+	padding: 5rem 0 5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-us__main{
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-us__content h2{
+	font-size: 4rem;
+	margin-bottom: 4rem;
+}
+
+.about-us__content p{
+	width: 600px;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 2.2rem;
+}
+
+
+.about-us img{
+	width: 400px;
+	height: 400px;
+	margin: 10rem 0 0 10rem;
+	border: 2px solid var(--color-light);
 }

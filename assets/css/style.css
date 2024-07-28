@@ -141,7 +141,7 @@ html{
 	color: var(--color-light);
 }
 
-/* -------------------- about-us -------------------- */
+/* -------------------- About-us -------------------- */
 .about-us{
 	background-color: var(--color-dark);
 	color: white;
@@ -183,7 +183,7 @@ html{
 	border: 2px solid var(--color-light);
 }
 
-/* -------------------- restaurant menu -------------------- */
+/* -------------------- Restaurant menu -------------------- */
 .restaurant-menu{
 	width: 100%;
 	display: flex;
@@ -272,4 +272,48 @@ html{
 .restaurant-menu__item-info button:hover{
 	background-color: var(--color-dark-bg);
 	color: white;
+}
+
+/* -------------------- Footer -------------------- */
+.contact{
+	width: 100%;
+	background-color: var(--color-dark);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 1.8rem;
+	padding: 4rem;
+}
+
+.contact h3{
+	font-size: 4rem;
+	margin-bottom: 6rem;
+}
+
+.contact-itens{
+	width: 700px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+	margin-bottom: 4rem;
+}
+
+.contact-itens div{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.contact-itens a{
+	color: white;
+}
+
+.contact-itens a:hover{
+	color: var(--color-light);
+}
+
+.contact-itens span{
+	margin-left: 10px;
 }

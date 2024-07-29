@@ -142,6 +142,10 @@ html{
 }
 
 /* -------------------- About-us -------------------- */
+#about-us{
+    scroll-margin-top: 35em;
+}
+
 .about-us{
 	background-color: var(--color-dark);
 	color: white;
@@ -184,6 +188,10 @@ html{
 }
 
 /* -------------------- Restaurant menu -------------------- */
+#restaurant-menu{
+    scroll-margin-top: 5em;
+}
+
 .restaurant-menu{
 	width: 100%;
 	display: flex;
@@ -191,6 +199,7 @@ html{
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(12,12,12,0.8);
+	padding-bottom: 10rem;
 }
 
 .restaurant-menu h2{
@@ -203,7 +212,7 @@ html{
 	width: 80%;
 	margin: 2rem 0 2rem 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
 	justify-content: center;
 	align-items: center;
 	gap: 30px;

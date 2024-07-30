@@ -356,3 +356,14 @@ html{
 		width: 98%;
 	}
 }
+
+@media(max-width: 850px) {
+	html{
+		font-size: 50%;
+	}
+	/* -------------------- Header -------------------- */
+	.header{
+		height: 13%;
+		letter-spacing: .3rem;
+	}
+}

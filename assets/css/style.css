@@ -25,8 +25,6 @@ h1, h2, h3{
 }
 
 html{
-	height: 100vw;
-	height: 100vh;
 	font-size: 62.5%;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
@@ -343,7 +341,7 @@ html{
 	}
 
 	.header__logo{
-		margin: 2rem 0 4rem 0;
+		margin: 2rem 0 2rem 0;
 	}
 
 	.header__nav-list{
@@ -352,7 +350,7 @@ html{
 	}
 
 	.header__nav-list li a{
-		padding: 2rem 1rem 2rem 1rem;
+		padding: 1rem 1rem 2rem 1rem;
 	}
 	/* -------------------- About us -------------------- */
 	.about-us__main{
@@ -361,7 +359,7 @@ html{
 
 	.about-us__main img{
 		width: 600px;
-		margin-left: -2px;
+		margin-left: 0px;
 	}
 
 	/* -------------------- Restaurant menu -------------------- */
@@ -374,5 +372,26 @@ html{
 @media(max-width: 850px) {
 	html{
 		font-size: 50%;
+	}
+}
+
+@media(max-width: 768px) {
+	html{
+		font-size: 45%;
+	}
+	/* -------------------- Header -------------------- */
+	.header{
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 0px 40px;
+	}
+
+	.header__nav-list{
+		display: none;
+	}
+
+	/* -------------------- Contact -------------------- */
+	.contact-itens{
+		justify-content: space-around;
 	}
 }

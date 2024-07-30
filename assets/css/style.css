@@ -326,3 +326,33 @@ html{
 .contact-itens span{
 	margin-left: 10px;
 }
+
+/* -------------------- Mobile -------------------- */
+@media(max-width: 1200px) {
+	/* -------------------- Header -------------------- */
+	.header{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 15%;
+	}
+
+	.header__logo{
+		margin-bottom: 4rem;
+	}
+
+	/* -------------------- About us -------------------- */
+	.about-us__main{
+		display: block;
+	}
+
+	.about-us__main img{
+		width: 600px;
+		margin-left: -2px;
+	}
+
+	/* -------------------- Header -------------------- */
+	.restaurant-menu__itens-menu{
+		width: 98%;
+	}
+}

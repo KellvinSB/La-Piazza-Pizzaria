@@ -124,6 +124,7 @@ html{
 
 .header.on .header__nav-list li a{
 	font-size: 3rem;
+	margin-top: 4rem;
 
 }
 
@@ -393,9 +394,13 @@ html{
 	.header__nav-list li a{
 		padding: 1rem 1rem 2rem 1rem;
 	}
+
 	/* -------------------- About us -------------------- */
 	.about-us__main{
-		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.about-us__main img{
@@ -414,12 +419,31 @@ html{
 	html{
 		font-size: 50%;
 	}
+
+	/* -------------------- Restaurant menu -------------------- */
+	.restaurant-menu__itens-menu{
+		grid-template-columns: repeat(2, minmax(30px, 300px));
+	}
+	
+	.restaurant-menu__itens-menu h4{
+		font-size: 2.5rem;
+	}
+	
+	.restaurant-menu__itens-menu p{
+		font-size: 2rem;
+		letter-spacing: .2rem;
+	}
+	
+	.restaurant-menu__itens-menu button{
+		font-size: 1.8rem;
+	}
 }
 
 @media(max-width: 768px) {
 	html{
 		font-size: 45%;
 	}
+
 	/* -------------------- Header -------------------- */
 	.header__hamburger-menu{
 		display: flex;
@@ -435,26 +459,30 @@ html{
 		display: none;
 	}
 
+	/* -------------------- First section -------------------- */
+	.first-section__main h1{
+		width: 500px;
+		text-align: center;
+		font-size: 4rem;
+	}
+
+	.first-section__main h2{
+		font-size: 2.8rem;
+	}
+
+	/* -------------------- About us -------------------- */
+	.about-us__main img, .about-us__main p{
+		width: 450px;
+	}
+
 	/* -------------------- Restaurant menu -------------------- */
 	.restaurant-menu__itens-menu{
-		grid-template-columns: repeat(2, minmax(30px, 330px));
-	}
-
-	.restaurant-menu__itens-menu h4{
-		font-size: 2.5rem;
-	}
-
-	.restaurant-menu__itens-menu p{
-		font-size: 2rem;
-		letter-spacing: .2rem;
-	}
-
-	.restaurant-menu__itens-menu button{
-		font-size: 1.8rem;
+		grid-template-columns: repeat(auto-fit, minmax(30px, 400px));
 	}
 
 	/* -------------------- Contact -------------------- */
 	.contact-itens{
+		width: 200px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -464,6 +492,66 @@ html{
 	}
 }
 
-@media(max-width: 600px) {
+@media(max-width: 500px) {
+	html{
+		font-size: 40%;
+		letter-spacing: .2rem;
+	}
 
+	/* -------------------- Header -------------------- */
+	.header{
+		padding: 0 10px;
+	}
+
+	.header__hamburger-menu{
+		right: 60px;
+	}
+
+	.header__nav-list{
+		width: 200px;
+	}
+
+	/* -------------------- First section -------------------- */
+	.first-section__main{
+		margin-top: 50px;
+		width: 300px;
+		line-height: 6rem;
+	}
+
+	.first-section__main h1{
+		width: inherit;
+		margin: 5rem 0;
+	}
+
+	.first-section__main h2{
+		text-align: center;
+	}
+
+	.first-section__btn{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5rem;
+		width: 250px;
+	}
+
+	.first-section__btn button{
+		font-size: 2.2rem;
+		width: 100%;
+	}
+
+	/* -------------------- About us -------------------- */
+	.about-us img{
+		width: 300px;
+		height: 200px;
+	}
+
+	.about-us p{
+		width: 300px;
+	}
+
+	/* -------------------- Restaurant menu -------------------- */
+	.restaurant-menu__itens-menu{
+		width: 75%;
+	}
 }
